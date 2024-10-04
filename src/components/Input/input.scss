@@ -1,6 +1,34 @@
 * {
     box-sizing: border-box;
 }
-html{
+html {
     font-size: 16px;
+}
+
+input {
+    border-radius: 4px;
+    line-height: 1.5em;
+    font-size: 16px;
+    padding: .5em 1em;
+    width: 100%;
+}
+
+.results-container {
+    width: 100%;
+    position: relative;
+    border-radius: 4px;
+    min-height: 100px;
+    border: solid 1px #ddd;
+    margin-top: 4px;
+    font-style: italic;
+    .item {
+        padding: 1em 2em;
+    }
+    &__result:hover {
+        cursor: pointer;
+        background-color: #eee;
+    }
+    &__error {
+        color: red;
+    }
 }
